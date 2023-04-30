@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
  * main - Prints all possible combinations of two-digit numbers.
@@ -10,7 +12,7 @@ int main(void)
 
 	for (i = 0; i <= 98; i++)
 	{
-		for (j = i; j <= 99; j++)
+		for (j = i + 1; j <= 99; j++)
 		{
 			putchar((i / 10) + '0');
 			putchar((j % 10) + '0');
