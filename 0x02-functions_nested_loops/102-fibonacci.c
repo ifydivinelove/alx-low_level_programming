@@ -1,4 +1,4 @@
-#iinclude <stdio.h>
+#include <stdio.h>
 
 /**
  * main - Prints first 50 Fibonacci numbers starting with 1 and 2,
@@ -14,7 +14,7 @@ int main(void)
 	for (count = 0; count < 50; count++)
 	{
 		sum = fib1 + fib2;
-		printf("%d", sum);
+		printf("%ld", sum);
 
 		fib1 = fib2;
 		fib2 = sum;
